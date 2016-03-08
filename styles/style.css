@@ -119,3 +119,12 @@ address {
   text-decoration: none;
   color: inherit;
 }
+
+.screenshot {
+  height: 30%;
+  width: 30%;
+}
+
+#social {
+  margin-bottom: 100px;
+}
