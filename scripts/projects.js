@@ -21,6 +21,6 @@ var projectData = [
     author:      'Katherine Paulino Lucas',
     authorUrl:   'https://github.com/katepaulino',
     publishedOn: '2016-02-15',
-    body:        '<p><a href="https://github.com/katepaulino/market-analysis-app"><img src="img/maa.png" class="screenshot"></p>'
+    body:        '<p><a href="http://katepaulino.github.io/market-analysis-app/"><img src="img/maa.png" class="screenshot"></p>'
   },
 ];
