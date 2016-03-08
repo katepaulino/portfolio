@@ -120,6 +120,10 @@ address {
   color: inherit;
 }
 
+.draft {
+  display: none;
+}
+
 .screenshot {
   border: 1px solid #000000;
   align-content: center;
