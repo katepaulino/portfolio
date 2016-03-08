@@ -1,0 +1,74 @@
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 50px;
+  color: #330066;
+}
+
+nav {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 10px;
+}
+
+ul li {
+ list-style: none;
+}
+
+li a {
+ color: #000000;
+ text-decoration: none;
+ font-size: 25px;
+ padding: 12px;
+}
+
+li a: hover {
+ color: #7eb9be;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.container {
+  flex-direction: column;
+  height: 300px;
+  width: 600px;
+  margin: auto;
+}
