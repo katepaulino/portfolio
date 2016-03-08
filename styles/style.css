@@ -81,9 +81,41 @@ li a: hover {
   height: 300px;
   width: 600px;
   margin: auto;
+  text-align: justify;
 }
 
 #aboutpic {
   float: left;
-  overflow: auto;
+  margin: 20px;
+}
+
+span {
+  font-size: 14px;
+}
+
+body {
+  padding: 1em;
+}
+
+address {
+  display: inline-block;
+}
+
+.template {
+  display: none;
+}
+
+.draft {
+  display: none;
+}
+
+.byline {
+  color: #777;
+  flex-direction: column;
+}
+
+.byline a {
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
 }
