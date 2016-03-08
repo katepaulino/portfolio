@@ -16,7 +16,7 @@ Project.prototype.toHtml = function() {
   $newProject.find('.byline a').html(this.author);
   $newProject.find('.byline a').attr('href', this.authorUrl);
   $newProject.find('h1').html(this.title);
-  $newProject.find('.Project-body').html(this.body);
+  $newProject.find('.article-body').html(this.body);
   $newProject.find('time[pubdate]').attr('datetime', this.publishedOn);
   $newProject.find('time[pubdate]').attr('title', this.publishedOn);
   $newProject.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');

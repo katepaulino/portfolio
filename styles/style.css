@@ -121,8 +121,10 @@ address {
 }
 
 .screenshot {
-  height: 30%;
-  width: 30%;
+  border: 1px solid #000000;
+  align-content: center;
+  height: 40%;
+  width: 40%;
 }
 
 #social {
