@@ -39,3 +39,16 @@ projectData.forEach(function(ele) {
 projects.forEach(function(a){
   $('#projects').append(a.toHtml());
 });
+
+// // hide sections, show when clicked
+// $('document').ready(function() {
+//   $('.menu-content').hide();
+//   $('#about').show();
+// });
+//
+// $('.nav li').on('click', function() {
+//   $('.menu-content').hide();
+//   // $('#frontName').hide();
+//   $('.menu-content[menu-content="' + $(this).text() + '"]');
+//   $('#'+$(this).attr('menu-content')).fadeIn();
+// });
