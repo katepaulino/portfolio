@@ -125,9 +125,9 @@ address {
 
 .screenshot {
   border: 1px solid #000;
-  align-content: center;
-  height: 40%;
+  height: 45%;
   width: 40%;
+  margin-bottom: 50px;
 }
 
 footer {

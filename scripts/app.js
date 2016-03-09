@@ -40,15 +40,18 @@ projects.forEach(function(a){
   $('#projects').append(a.toHtml());
 });
 
-// // hide sections, show when clicked
-// $('document').ready(function() {
-//   $('.menu-content').hide();
-//   $('#about').show();
-// });
-//
-// $('.nav li').on('click', function() {
-//   $('.menu-content').hide();
-//   // $('#frontName').hide();
-//   $('.menu-content[menu-content="' + $(this).text() + '"]');
-//   $('#'+$(this).attr('menu-content')).fadeIn();
-// });
+// hide and show menu content on click
+var projectView = {};
+
+projectView.handleMainNav = function() {
+  $('.nav li').on('click', function() {
+    $('.tab-content').hide();
+    $('.tab-content[data-content="' + $(this).text() + '"]');
+    $('#'+$(this).attr('data-content')).show();
+  });
+  $('.nav .tab:first').click();
+};
+
+$('document').ready(function() {
+  projectView.handleMainNav();
+});
