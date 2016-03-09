@@ -39,3 +39,19 @@ projectData.forEach(function(ele) {
 projects.forEach(function(a){
   $('#projects').append(a.toHtml());
 });
+
+// hide and show menu content on click
+var projectView = {};
+
+projectView.handleMainNav = function() {
+  $('.nav li').on('click', function() {
+    $('.tab-content').hide();
+    $('.tab-content[data-content="' + $(this).text() + '"]');
+    $('#'+$(this).attr('data-content')).show();
+  });
+  $('.nav .tab:first').click();
+};
+
+$('document').ready(function() {
+  projectView.handleMainNav();
+});

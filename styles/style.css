@@ -1,26 +1,26 @@
 html, body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Arimo', sans-serif;
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
+  color: 	#909090;
 }
 
 h1 {
-  font-family: 'Satisfy', cursive;
-  font-size: 50px;
-  color: #330066;
+  font-size: 32px;
+  color: #909090;
 }
 
 h2 {
-  color: #66cccc;
+  color: #303030;
 }
 
 nav {
   position: fixed;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Arimo', sans-serif;
   top: 10px;
-  left: 0;
+  left: 10px;
   z-index: 9999;
   width: 100px;
   height: 50px;
@@ -30,16 +30,15 @@ nav {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
 }
 
 .nav li {
-    display: inline;
+    display: inline-block;
 }
 
 .nav a {
     display: inline-block;
-    padding: 10px;
 }
 
 ul li {
@@ -47,14 +46,14 @@ ul li {
 }
 
 li a {
- color: #000000;
+ color: #A8A8A8;
  text-decoration: none;
- font-size: 25px;
- padding: 12px;
+ font-size: 18px;
+ padding: 8px;
 }
 
 li a: hover {
- color: #7eb9be;
+ color: #888888;
 }
 
 .hvr-grow {
@@ -125,12 +124,24 @@ address {
 }
 
 .screenshot {
-  border: 1px solid #000000;
-  align-content: center;
-  height: 40%;
+  border: 1px solid #000;
+  height: 45%;
   width: 40%;
+  margin-bottom: 50px;
 }
 
-#social {
-  margin-bottom: 100px;
+footer {
+   position: fixed;
+   left: 0px;
+   bottom: 0px;
+   height: 50px;
+   width: 100%;
+   background: #FFF;
+}
+
+#contactIcons {
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
