@@ -21,7 +21,7 @@
       </ul>
     </nav>
     <main>
-      <section id='home'>
+      <section id='home' class='tab-content'>
         <h1>Kate Lucas</h1>
         <!-- TODO: what other content should I put for my home page?-->
       </section>
@@ -35,12 +35,13 @@
       <section id='projects' class='tab-content'>
         <h2>Projects</h2>
         <script id="project-template" type="text/x-handlebars-template">
-        <article class='template' data-category="{{category}}">
-        <header>
-          <h1>Project Title</h1>
-        </header>
-      <section class="article-body"></section>
-        </article>
+          <article data-category="{{category}}">
+            <header>
+              <h3>{{title}}</h3>
+            </header>
+            <section>{{{body}}}</section>
+          </article>
+        </script>
       </section>
    </main>
   <footer>

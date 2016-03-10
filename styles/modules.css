@@ -23,6 +23,8 @@ can I add a class in there? */
   text-align: left;
 }
 
+
+
 /*desktop viewport*/
 @media only screen and (min-width: 640px) {
 
