@@ -11,7 +11,7 @@ var projectData = [
   {
     title:       'Twimpact',
     category:    'nonprofit',
-    author:      'Katherine Paulino Lucas, Daniel Lee, Sarah Wong',
+    author:      'Katherine Paulino Lucas',
     authorUrl:   'https://github.com/katepaulino',
     publishedOn: '2016-02-28',
     body:        '<p><a href="http://katepaulino.github.io/twimpact" target="_blank"><img src="img/twimpact.png" class="screenshot"></p>'

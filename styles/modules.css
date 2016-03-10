@@ -5,8 +5,8 @@
 can I add a class in there?
 
 /*desktop viewport*/
-@media only screen
-  and (min-width: 620px) {
+/*@media only screen
+  and (min-width: 620px) {*/
 
 .hamburger {
   display: none;
@@ -51,7 +51,7 @@ can I add a class in there?
   color: inherit;
 }
 
-}
+/*}*/
 
 /*mobile viewport*/
 @media only screen
