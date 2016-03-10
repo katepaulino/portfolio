@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Katherine Paulino Lucas</title>
+    <meta name="viewport" content="width=device-width, intitial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
     <link href="vendor/normalize.css" type="text/css" rel="stylesheet">
     <link href="vendor/hover.css" type="text/css" rel="stylesheet">
+    <link href="styles/base.css" type="text/css" rel="stylesheet">
+    <link href="styles/modules.css" type="text/css" rel="stylesheet">
     <link href="styles/style.css" type="text/css" rel="stylesheet">
   </head>
-  <body align='center'>
-    <nav>
+  <body align=center>
+    <nav class='main-nav'>
+      <img class='hamburger' src='img/ham.png'>
       <ul class='nav'>
         <li class='tab' data-content='home'><a href='#' class='hvr-grow'>home</a><li>
         <li class='tab' data-content='about'><a href='#about' class='hvr-grow'>about</a><li>
@@ -19,12 +23,11 @@
     <main>
       <section id='home'>
         <h1>Katherine Paulino Lucas</h1>
-        <p>[add more content here]</p>
       </section>
       <section id='about' class='tab-content'>
         <h2>About</h2>
         <p class='container'>
-        <img id='aboutpic' src='img/kate2.png' height=150 width=150>
+        <img id='aboutpic' src='img/kate2.png'>
         <span>Lorizzle ipsizzle own yo' sit go to hizzle, consectetuer adipiscing doggy. My shizz crazy velizzle, ghetto volutpizzle, cool quizzle, away vizzle, sure. Gangster eget tortor. Funky fresh erizzle. Fusce at pizzle dapibus turpis pimpin' tempor. Maurizzle pellentesque nibh izzle turpizzle. Pimpin' in tortizzle. Pellentesque fizzle rhoncus nisi. Daahng dawg hac habitasse platea dictumst. Mah nizzle away. Curabitur tellus urna, pretizzle da bomb, mattizzle go to hizzle, i'm in the shizzle ma nizzle, nunc. Yippiyo suscipizzle. Izzle bizzle velit sed check out this.</span>
         </p>
       </section>
@@ -35,7 +38,7 @@
             <h1>Project Title</h1>
               <div class="byline">
                 By <address><a href="">Author Name</a></address>
-                published <time pubdate datetime="2000-01-01">Publish Time</time>
+                <!-- published <time pubdate datetime="2000-01-01">Publish Time</time> -->
               </div>
           </header>
        <section class="article-body"></section>

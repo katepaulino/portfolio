@@ -1,0 +1,60 @@
+html, body {
+  font-family: 'Arimo', sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  color: 	#909090;
+}
+
+h1 {
+  font-size: 32px;
+  color: #909090;
+}
+
+h2 {
+  color: #303030;
+}
+
+nav {
+  position: fixed;
+  font-family: 'Arimo', sans-serif;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  width: 100px;
+  height: 50px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+span {
+  font-size: 14px;
+}
+
+body {
+  padding: 1em;
+}
+
+ul li {
+ list-style: none;
+}
+
+li a {
+ color: #A8A8A8;
+ text-decoration: none;
+ font-size: 18px;
+ padding: 8px;
+}
+
+footer {
+   position: fixed;
+   left: 0px;
+   bottom: 0px;
+   height: 50px;
+   width: 100%;
+   background: #FFF;
+}
