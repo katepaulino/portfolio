@@ -1,3 +1,8 @@
+address {
+  display: inline-block;
+  font-size: 12px;
+}
+
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
@@ -18,18 +23,9 @@
 }
 
 .container {
-  /* setting the height and width will mess with the aspect ratio
-  you usually only need to set one which is typically the width */
-  /*height: 300px;*/
-  /*width: 600px;*/
   width: 80%;
   margin: auto;
   text-align: justify;
-}
-
-address {
-  display: inline-block;
-  font-size: 12px;
 }
 
 .draft {

@@ -1,12 +1,30 @@
 /* TODO:
-1) make nav bar hide and hamburger menu show when mobile breakpoint hits
-2) the hamburger menu won't hide with display: none, what am I missing?
+X) make nav bar hide and hamburger menu show when mobile breakpoint hits
+X) the hamburger menu won't hide with display: none, what am I missing?
 3) make text responsive - since some of the text is in the project.js file,
-can I add a class in there?
+can I add a class in there? */
+
+.hamburger {
+  float: left;
+}
+
+.main-nav ul {
+  display: none;
+  padding: 0;
+}
+
+.main-nav:hover ul {
+  display: block;
+}
+
+.main-nav li {
+  font-size: 1em;
+  padding: 0;
+  text-align: left;
+}
 
 /*desktop viewport*/
-/*@media only screen
-  and (min-width: 620px) {*/
+@media only screen and (min-width: 640px) {
 
 .hamburger {
   display: none;
@@ -14,26 +32,27 @@ can I add a class in there?
 
 .main-nav ul {
   display: inline-block;
+  text-align: left;
 }
 
 .main-nav li {
   display: inline-block;
   margin-top: 20px;
+  text-align: left;
 }
 
 .nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav li {
-    display: inline;
+  display: inline;
 }
 
 .nav a {
-    display: inline-block;
+  display: inline-block;
 }
 
 .template {
@@ -50,29 +69,5 @@ can I add a class in there?
   text-decoration: none;
   color: inherit;
 }
-
-/*}*/
-
-/*mobile viewport*/
-/* these responsive breakpoints are notoriously difficult to visualize.
-The previous media query was keying off the max width of the device itself, which is fragile. 
-You may not want to use this exact breakpoint, but it's saying "the styling that follows should be 
-applied when the screen is under 375px */
-@media only screen and (max-width: 375px) {
-
-  .hamburger {
-    display: block;
-  }
-
-  .main-nav ul {
-    display: none;
-    padding: 0;
-    list-style: none;
-    clear: both;
-  }
-
-  .main-nav:hover ul {
-    display: block;
-  }
 
 }
