@@ -1,3 +1,8 @@
+address {
+  display: inline-block;
+  font-size: 12px;
+}
+
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
@@ -22,11 +27,6 @@
   width: 600px;
   margin: auto;
   text-align: justify;
-}
-
-address {
-  display: inline-block;
-  font-size: 12px;
 }
 
 .draft {
