@@ -54,22 +54,25 @@ can I add a class in there?
 /*}*/
 
 /*mobile viewport*/
-@media only screen
-  and (min-device-width: 375px) {
+/* these responsive breakpoints are notoriously difficult to visualize.
+The previous media query was keying off the max width of the device itself, which is fragile. 
+You may not want to use this exact breakpoint, but it's saying "the styling that follows should be 
+applied when the screen is under 375px */
+@media only screen and (max-width: 375px) {
 
-.hamburger {
-  display: block;
-}
+  .hamburger {
+    display: block;
+  }
 
-.main-nav ul {
-  display: none;
-  padding: 0;
-  list-style: none;
-  clear: both;
-}
+  .main-nav ul {
+    display: none;
+    padding: 0;
+    list-style: none;
+    clear: both;
+  }
 
-.main-nav:hover ul {
-  display: block;
-}
+  .main-nav:hover ul {
+    display: block;
+  }
 
 }
