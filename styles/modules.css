@@ -1,3 +1,9 @@
+/* TODO:
+1) make nav bar hide and hamburger menu show when mobile breakpoint hits
+2) the hamburger menu won't hide with display: none, what am I missing?
+3) make text responsive - since some of the text is in the project.js file,
+can I add a class in there?
+
 /*desktop viewport*/
 @media only screen
   and (min-width: 620px) {

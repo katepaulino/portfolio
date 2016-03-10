@@ -50,7 +50,6 @@ projectView.handleMainNav = function() {
     $('#'+$(this).attr('data-content')).show();
   });
   $('.nav .tab:first').click();
-  $('h1').hide();
 };
 
 $('document').ready(function() {

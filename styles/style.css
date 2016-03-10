@@ -29,25 +29,6 @@ address {
   font-size: 12px;
 }
 
-.template {
-  display: none;
-}
-
-.draft {
-  display: none;
-}
-
-.byline {
-  color: #777;
-  flex-direction: column;
-}
-
-.byline a {
-  font-weight: bold;
-  text-decoration: none;
-  color: inherit;
-}
-
 .draft {
   display: none;
 }
