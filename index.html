@@ -34,6 +34,15 @@
       </section>
       <section id='projects' class='tab-content'>
         <h2>Projects</h2>
+        <div>
+          <ul id="filters">
+              <select id="category-filter">
+                <option value="">-- Filter by Categories --</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <article class="template template" data-category="category">
         <script id="project-template" type="text/x-handlebars-template">
           <article data-category="{{category}}">
             <header>
@@ -42,6 +51,7 @@
             <section>{{{body}}}</section>
           </article>
         </script>
+        </article>
       </section>
    </main>
   <footer>
@@ -56,6 +66,7 @@
   <script src='https://code.jquery.com/jquery-2.2.1.min.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
   <script src='scripts/projects.js'></script>
+  <script src='scripts/projectView.js'></script>
   <script src='scripts/app.js'></script>
   </body>
 </html>
