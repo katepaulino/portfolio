@@ -33,6 +33,7 @@ projectView.handleMainNav = function() {
 };
 
 $('document').ready(function() {
+  projectView.populateFilters();
   projectView.handleMainNav();
   projectView.handleCategoryFilter();
 });

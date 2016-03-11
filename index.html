@@ -36,6 +36,7 @@
         <h2>Projects</h2>
         <div>
           <ul id="filters">
+            <li>
               <select id="category-filter">
                 <option value="">-- Filter by Categories --</option>
               </select>
@@ -43,30 +44,30 @@
           </ul>
         </div>
         <article class="template template" data-category="category">
-        <script id="project-template" type="text/x-handlebars-template">
-          <article data-category="{{category}}">
-            <header>
-              <h3>{{title}}</h3>
-            </header>
-            <section>{{{body}}}</section>
-          </article>
-        </script>
+          <script id="project-template" type="text/x-handlebars-template">
+            <article data-category="{{category}}">
+              <header>
+                <h3>{{title}}</h3>
+              </header>
+              <section>{{{body}}}</section>
+            </article>
+          </script>
         </article>
       </section>
-   </main>
-  <footer>
-    <section id="contactIcons">
-      <a href='https://www.facebook.com/katelucas28' target='_blank' class='hvr-grow'><img src='img/fb.png' height=50 width=50></a>
-      <a href='https://twitter.com/coolsharkie' target='_blank' class='hvr-grow'><img src='img/twit.png' height=50 width=50></a>
-      <a href='https://plus.google.com/106634355076624005018' target='_blank' class='hvr-grow'><img src='img/gplus.png' height=50 width=50></a>
-      <a href='mailto:katherinelucas@gmail.com' target='_blank' class='hvr-grow'><img src='img/email.png' height=50 width=50></a>
-   </section>
-  </footer>
+    </main>
+    <footer>
+      <section id="contactIcons">
+        <a href='https://www.facebook.com/katelucas28' target='_blank' class='hvr-grow'><img src='img/fb.png' height=50 width=50></a>
+        <a href='https://twitter.com/coolsharkie' target='_blank' class='hvr-grow'><img src='img/twit.png' height=50 width=50></a>
+        <a href='https://plus.google.com/106634355076624005018' target='_blank' class='hvr-grow'><img src='img/gplus.png' height=50 width=50></a>
+        <a href='mailto:katherinelucas@gmail.com' target='_blank' class='hvr-grow'><img src='img/email.png' height=50 width=50></a>
+     </section>
+    </footer>
 
-  <script src='https://code.jquery.com/jquery-2.2.1.min.js'></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-  <script src='scripts/projects.js'></script>
-  <script src='scripts/projectView.js'></script>
-  <script src='scripts/app.js'></script>
+    <script src='https://code.jquery.com/jquery-2.2.1.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src='scripts/projects.js'></script>
+    <script src='scripts/projectView.js'></script>
+    <script src='scripts/app.js'></script>
   </body>
 </html>
