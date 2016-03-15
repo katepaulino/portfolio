@@ -5,7 +5,9 @@ projectView.populateFilters = function() {
     if (!$(this).hasClass('template')) {
       var val = $(this).attr('data-category');
       var optionTag = '<option value="' + val + '">' + val + '</option>';
-      $('#category-filter').append(optionTag);
+      if ($('#category-filter option[value="' + val + '"]').length === 0) {
+        $('#category-filter').append(optionTag);
+      }
     }
   });
 };
@@ -32,8 +34,15 @@ projectView.handleMainNav = function() {
   $('.nav .tab:first').click();
 };
 
-$('document').ready(function() {
-  projectView.populateFilters();
-  projectView.handleMainNav();
-  projectView.handleCategoryFilter();
-});
+
+ProjectView.initIndexPage = function() {
+  Project.all.forEach(function(a){
+    $('#projects').append(a.toHtml());
+  });
+
+  $('document').ready(function() {
+    projectView.populateFilters();
+    projectView.handleMainNav();
+    projectView.handleCategoryFilter();
+  });
+};
