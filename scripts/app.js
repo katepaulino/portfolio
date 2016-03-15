@@ -1,5 +1,3 @@
-var projects = [];
-
 function Project (opts) {
   this.author = opts.author;
   this.title = opts.title;
@@ -9,20 +7,34 @@ function Project (opts) {
   this.body = opts.body;
 }
 
+Project.all = [];
+
 Project.prototype.toHtml = function() {
   var source = $('#project-template').html();
   var template = Handlebars.compile(source);
   return template(this);
 };
 
-projectData.sort(function(a,b) {
-  return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
-});
+Project.loadAll = function(rawData) {
+  rawData.sort(function(a,b) {
+    return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
+  });
 
-projectData.forEach(function(ele) {
-  projects.push(new Project(ele));
-});
+  rawData.forEach(function(ele) {
+    Project.all.push(new Project(ele));
+  });
+};
 
-projects.forEach(function(a){
-  $('#projects').append(a.toHtml());
-});
+
+Project.fetchAll = function() {
+  if (localStorage.rawData) {
+    Project.loadAll(localStorage.rawData);
+    projectView.initIndexPage();
+  } else {
+    $.getJSON('/data/projects.json', function(rawData){
+      Project.loadAll(rawData);
+      localStorage.setItem('rawData', JSON.stringify(rawData));
+      ProjectView.initIndexPage();
+    });
+  }
+};
