@@ -35,7 +35,7 @@ projectView.handleMainNav = function() {
 };
 
 
-ProjectView.initIndexPage = function() {
+projectView.initIndexPage = function() {
   Project.all.forEach(function(a){
     $('#projects').append(a.toHtml());
   });

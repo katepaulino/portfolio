@@ -1,4 +1,7 @@
-function Project (opts) {
+(function(module) {
+
+function Project(opts) {
+  'use strict';
   this.author = opts.author;
   this.title = opts.title;
   this.category = opts.category;
@@ -10,8 +13,7 @@ function Project (opts) {
 Project.all = [];
 
 Project.prototype.toHtml = function() {
-  var source = $('#project-template').html();
-  var template = Handlebars.compile(source);
+  var template = Handlebars.compile($('#project-template').text());
   return template(this);
 };
 
@@ -19,17 +21,16 @@ Project.loadAll = function(rawData) {
   rawData.sort(function(a,b) {
     return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
   });
-
   rawData.forEach(function(ele) {
     Project.all.push(new Project(ele));
   });
 };
 
 
-Project.fetchAll = function() {
+Project.fetchAll = function(next) {
   if (localStorage.rawData) {
     Project.loadAll(localStorage.rawData);
-    projectView.initIndexPage();
+    next();
   } else {
     $.getJSON('/data/projects.json', function(rawData){
       Project.loadAll(rawData);
@@ -38,3 +39,6 @@ Project.fetchAll = function() {
     });
   }
 };
+
+  module.Project = Project;
+};(window);
