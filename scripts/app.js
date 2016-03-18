@@ -17,14 +17,10 @@
   };
 
   Project.loadAll = function(rawData) {
-    rawData.sort(function(a,b) {
-      return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
-    });
-    rawData.forEach(function(ele) {
-      Project.all.push(new Project(ele));
+    Project.all = rawData.map(function(ele) {
+      return new Project(ele);
     });
   };
-
 
   Project.fetchAll = function(next) {
     if (localStorage.rawData) {
