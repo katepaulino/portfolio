@@ -2,7 +2,7 @@
 
   var projectView = {};
 
-  projectView.populateFilters = function() {
+  projectView.populateFilter = function() {
     $('article').each(function() {
       if (!$(this).hasClass('template')) {
         var val = $(this).attr('data-category');
@@ -36,14 +36,13 @@
     $('.nav .tab:first').click();
   };
 
-
   projectView.initIndexPage = function() {
     Project.all.forEach(function(a){
       $('#projects').append(a.toHtml());
     });
 
     $('document').ready(function() {
-      projectView.populateFilters();
+      projectView.populateFilter();
       projectView.handleMainNav();
       projectView.handleCategoryFilter();
     });
