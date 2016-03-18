@@ -17,6 +17,9 @@
   };
 
   Project.loadAll = function(rawData) {
+    rawData.sort(function(a,b) {
+      return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
+    });
     rawData.forEach(function(ele) {
       Project.all.push(new Project(ele));
     });
@@ -31,7 +34,7 @@
       $.getJSON('/data/projects.json', function(rawData){
         Project.loadAll(rawData);
         localStorage.setItem('rawData', JSON.stringify(rawData));
-        next();
+        ProjectView.initIndexPage();
       });
     }
   };
