@@ -4,8 +4,6 @@
     this.author = opts.author;
     this.title = opts.title;
     this.category = opts.category;
-    this.authorUrl = opts.authorUrl;
-    this.publishedOn = opts.publishedOn;
     this.body = opts.body;
   }
 
