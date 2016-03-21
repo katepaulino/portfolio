@@ -28,7 +28,7 @@
       $.getJSON('/data/projects.json', function(rawData){
         Project.loadAll(rawData);
         localStorage.setItem('rawData', JSON.stringify(rawData));
-        ProjectView.initIndexPage();
+        projectView.initIndexPage();
       });
     }
   };
