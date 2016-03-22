@@ -1,6 +1,7 @@
 (function(module) {
   var projectController = {};
 
+  Project.fetchAll(projectView.initIndexPage);
 
   projectController.index = function() {
     console.log('hey');
@@ -8,6 +9,5 @@
     $('#projects').show();
   };
 
-  Project.fetchAll(projectView.initIndexPage);
   module.projectController = projectController;
 })(window);

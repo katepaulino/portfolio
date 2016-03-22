@@ -25,6 +25,7 @@
         <h1>Kate Lucas</h1>
         <!-- TODO: think of other content to put in here-->
       </section>
+
       <section id="about" class="tab-content">
         <h2>About</h2>
         <p class="container">
@@ -35,8 +36,18 @@
            at Code Fellows (located in Seattle, WA) where I"ve learned most of my superpowers. Check out my projects
            to see what I"ve been up to lately.
         </span>
-        </p>
+        <h2>GitHub Projects</h2>
+        <script id="repo-template" type="text/x-handlebars-template">
+          <li>
+            <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+            <p>Description: {{description}}</p>
+            <p>Language: {{language}}</p>
+            <p>Created: {{created_at}}</p>
+            <p>Last updated: {{updated_at}}</p>
+          </li>
+        </script>
       </section>
+
       <section id="projects" class="tab-content">
         <h2>Projects</h2>
         <div>
@@ -71,13 +82,17 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="/scripts/githubToken.js"></script>
+    <script src="/vendor/scripts/page.js"></script>
+
     <script src="/scripts/app.js"></script>
     <script src="/scripts/projectView.js"></script>
-    <script src="/vendor/scripts/page.js"></script>
+    <script src="/scripts/projectController.js"></script>
 
     <script src="/scripts/homeController.js"></script>
     <script src="/scripts/aboutController.js"></script>
-    <script src="/scripts/projectController.js"></script>
+    <script src="/scripts/repo.js"></script>
+    <script src="/scripts/repoView.js"></script>
     <script src="/scripts/routes.js"></script>
 
   </body>

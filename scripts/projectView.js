@@ -23,7 +23,6 @@
         $('article').fadeIn();
         $('article.template').hide();
       }
-      $('#category-filter').val('');
     });
   };
 
