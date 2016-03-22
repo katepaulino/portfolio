@@ -2,9 +2,10 @@
   var aboutController = {};
 
   aboutController.index = function() {
-    $('.tab-content').hide();
-    $('#about').show();
+    $('.main-nav').on('click', '.tab', function(e) {
+      $('.tab-content').hide();
+      $('#about').show();
+    });
   };
-
   module.aboutController = aboutController;
 })(window);
