@@ -1,11 +1,10 @@
 (function(module) {
   var homeController = {};
-
+  console.log('yoooo');
   homeController.index = function() {
-    $('.main-nav').on('click', '.tab', function(e) {
-      $('.tab-content').hide();
-      $('#home').show();
-    });
+    $('.tab-content').hide();
+    $('#home').show();
   };
+
   module.homeController = homeController;
 })(window);
