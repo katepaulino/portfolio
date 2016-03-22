@@ -32,10 +32,8 @@
       $('#projects').append(a.toHtml());
     });
 
-    $('document').ready(function() {
-      projectView.populateFilter();
-      projectView.handleCategoryFilter();
-    });
+    projectView.populateFilter();
+    projectView.handleCategoryFilter();
   };
 
   module.projectView = projectView;
