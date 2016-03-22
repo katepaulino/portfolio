@@ -4,8 +4,6 @@
     this.author = opts.author;
     this.title = opts.title;
     this.category = opts.category;
-    this.authorUrl = opts.authorUrl;
-    this.publishedOn = opts.publishedOn;
     this.body = opts.body;
   }
 
@@ -30,7 +28,7 @@
       $.getJSON('/data/projects.json', function(rawData){
         Project.loadAll(rawData);
         localStorage.setItem('rawData', JSON.stringify(rawData));
-        ProjectView.initIndexPage();
+        projectView.initIndexPage();
       });
     }
   };

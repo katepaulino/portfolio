@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "server.js",
+  "dependencies": {
+    "express-request-proxy": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katepaulino/portfolio.git"
+  },
+  "author": "Kate Lucas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/katepaulino/portfolio/issues"
+  },
+  "homepage": "https://github.com/katepaulino/portfolio#readme"
+}

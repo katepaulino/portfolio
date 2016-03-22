@@ -5,39 +5,39 @@
     <title>Kate Lucas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet" type="text/css">
-    <link href="vendor/normalize.css" type="text/css" rel="stylesheet">
-    <link href="vendor/hover.css" type="text/css" rel="stylesheet">
+    <link href="vendor/styles/normalize.css" type="text/css" rel="stylesheet">
+    <link href="vendor/styles/hover.css" type="text/css" rel="stylesheet">
     <link href="styles/base.css" type="text/css" rel="stylesheet">
     <link href="styles/modules.css" type="text/css" rel="stylesheet">
     <link href="styles/style.css" type="text/css" rel="stylesheet">
   </head>
   <body align=center>
-    <nav class='main-nav'>
-      <img class='hamburger' src='img/ham.png'>
-      <ul class='nav'>
-        <li class='tab' data-content='home'><a href='#home' class='hvr-grow'>home</a><li>
-        <li class='tab' data-content='about'><a href='#about' class='hvr-grow'>about</a><li>
-        <li class='tab' data-content='projects'><a href='#projects' class='hvr-grow'>projects</a><li>
+    <nav class="main-nav">
+      <img class="hamburger" src="img/ham.png">
+      <ul class="nav">
+        <li class="tab" data-content="home"><a href="/home" class="hvr-grow">home</a><li>
+        <li class="tab" data-content="about"><a href="/about" class="hvr-grow">about</a><li>
+        <li class="tab" data-content="projects"><a href="/projects" class="hvr-grow">projects</a><li>
       </ul>
     </nav>
     <main>
-      <section id='home' class='tab-content'>
+      <section id="home" class="tab-content">
         <h1>Kate Lucas</h1>
         <!-- TODO: think of other content to put in here-->
       </section>
-      <section id='about' class='tab-content'>
+      <section id="about" class="tab-content">
         <h2>About</h2>
-        <p class='container'>
-        <img id='aboutpic' src='img/kate2.png'>
-        <span>My name is Kate Lucas and I am a junior web designer who specializes in creating
+        <p class="container">
+        <img id="aboutpic" src="img/kate2.png">
+        <span>My name is Kate Lucas and I am a web designer who specializes in creating
            clean, dynamic and interactive web pages. I have been in the field for almost one year and I am quickly
            learning on the go. I am a social media guru, designer, developer and lover of technology. I studied
-           at Code Fellows (located in Seattle, WA) where I've learned most of my superpowers. Check out my projects
-           to see what I've been up to lately.
+           at Code Fellows (located in Seattle, WA) where I"ve learned most of my superpowers. Check out my projects
+           to see what I"ve been up to lately.
         </span>
         </p>
       </section>
-      <section id='projects' class='tab-content'>
+      <section id="projects" class="tab-content">
         <h2>Projects</h2>
         <div>
           <ul id="filters">
@@ -62,19 +62,23 @@
     </main>
     <footer>
       <section id="contactIcons">
-        <a href='https://www.facebook.com/katelucas28' target='_blank' class='hvr-grow'><img src='img/fb.png' height=50 width=50></a>
-        <a href='https://twitter.com/coolsharkie' target='_blank' class='hvr-grow'><img src='img/twit.png' height=50 width=50></a>
-        <a href='https://plus.google.com/106634355076624005018' target='_blank' class='hvr-grow'><img src='img/gplus.png' height=50 width=50></a>
-        <a href='mailto:katherinelucas@gmail.com' target='_blank' class='hvr-grow'><img src='img/email.png' height=50 width=50></a>
+        <a href="https://www.facebook.com/katelucas28" target="_blank" class="hvr-grow"><img src="img/fb.png" height=50 width=50></a>
+        <a href="https://twitter.com/coolsharkie" target="_blank" class="hvr-grow"><img src="img/twit.png" height=50 width=50></a>
+        <a href="https://plus.google.com/106634355076624005018" target="_blank" class="hvr-grow"><img src="img/gplus.png" height=50 width=50></a>
+        <a href="mailto:katherinelucas@gmail.com" target="_blank" class="hvr-grow"><img src="img/email.png" height=50 width=50></a>
      </section>
     </footer>
 
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js'></script>
-    <script src='scripts/projectView.js'></script>
-    <script src='scripts/app.js'></script>
-    <script>
-      Project.fetchAll(projectView.initIndexPage);
-    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="scripts/projectView.js"></script>
+    <script src="scripts/app.js"></script>
+    <script scr="scripts/homeController.js"></script>
+    <script src="scripts/aboutController.js"></script>
+    <script src="scripts/projectController.js"></script>
+    <script src="vendor/scripts/page.js"></script>
+    <script src="scripts/routes.js"></script>
+    <script src="server.js"></script>
+
   </body>
 </html>

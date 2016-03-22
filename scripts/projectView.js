@@ -27,15 +27,6 @@
     });
   };
 
-  projectView.handleMainNav = function() {
-    $('.nav li').on('click', function() {
-      $('.tab-content').hide();
-      $('.tab-content[data-content="' + $(this).text() + '"]');
-      $('#'+$(this).attr('data-content')).show();
-    });
-    $('.nav .tab:first').click();
-  };
-
   projectView.initIndexPage = function() {
     Project.all.forEach(function(a){
       $('#projects').append(a.toHtml());
@@ -43,7 +34,6 @@
 
     $('document').ready(function() {
       projectView.populateFilter();
-      projectView.handleMainNav();
       projectView.handleCategoryFilter();
     });
   };
