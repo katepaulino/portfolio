@@ -25,8 +25,8 @@
         <img id="aboutpic" src="img/kate2.png">
         <h2>Kate Lucas</h2>
         <p class="blockText">
-          <span>I am a web designer who specializes in creating
-          clean, dynamic and interactive web pages. I have been in the field for almost one year and I am quickly
+          <span>I am a web developer who specializes in creating
+          clean and dynamic web pages. I have been in the field for almost one year and I am quickly
           learning as I go. I am a social media guru, designer, developer and lover of technology. I studied
           at Code Fellows (Seattle, WA) where I've learned most of my superpowers. Check out my projects
           to see what I"ve been up to lately.
@@ -35,9 +35,9 @@
       </section>
 
       <section id="about" class="tab-content">
-        <h2>About</h2>
+        <p><img id="infopic" src="/img/kateinfoHD.png"/>
         <p class="container">
-        <h4>GitHub Projects</h4>
+        <h3>GitHub Projects</h3>
         <script id="repo-template" type="text/x-handlebars-template">
           <li>
             <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
@@ -83,14 +83,16 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-    <script src="/scripts/app.js"></script>
     <script src="/scripts/githubToken.js"></script>
-    <script src="/scripts/projectView.js"></script>
     <script src="/vendor/scripts/page.js"></script>
 
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/projectView.js"></script>
+
     <script src="/scripts/homeController.js"></script>
-    <script src="/scripts/aboutController.js"></script>
     <script src="/scripts/projectController.js"></script>
+    <script src="/scripts/aboutController.js"></script>
+
     <script src="/scripts/repo.js"></script>
     <script src="/scripts/repoView.js"></script>
     <script src="/scripts/routes.js"></script>
