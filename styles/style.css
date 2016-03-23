@@ -47,8 +47,6 @@ address {
 }
 
 #aboutpic {
-  float: left;
-  margin: 20px;
   height: 40%;
   width: 20%;
 }

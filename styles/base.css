@@ -27,8 +27,15 @@ nav {
 }
 
 img {
-  height: auto;
+  height: 40%;
   max-width: 100%;
+}
+
+.blockText {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em;
+  text-align: justify;
 }
 
 span {
