@@ -3,7 +3,6 @@
 
   aboutController.index = function() {
     $('.tab-content').hide();
-    // $('#about').show();
     $('#about').show().siblings().hide();
     repos.requestRepos(repoView.index);
   };

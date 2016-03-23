@@ -4,7 +4,6 @@
   Project.fetchAll(projectView.initIndexPage);
 
   projectController.index = function() {
-    console.log('hey');
     $('.tab-content').hide();
     $('#projects').show();
   };
