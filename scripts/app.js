@@ -1,10 +1,9 @@
 (function(module) {
 
   function Project(opts) {
-    this.author = opts.author;
-    this.title = opts.title;
-    this.category = opts.category;
-    this.body = opts.body;
+    Object.keys(opts).forEach(function(p, idx, keys) {
+      this[p] = opts[p];
+    },this);
   }
 
   Project.all = [];

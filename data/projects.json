@@ -1,10 +1,10 @@
 [
   {
-    "title":       "Cookie Stand",
-    "category":    "cookies",
+    "title":       "Sail Wende",
+    "category":    "sailing",
     "author":      "Katherine Paulino Lucas",
     "authorUrl":   "https://github.com/katepaulino",
-    "body":        "<p><a href='http://katepaulino.github.io/cookie-stand' target='_blank'><img src='img/cookiestand.png' class='screenshot'></p>"
+    "body":        "<p><a href='http://sailwende.com' target='_blank'><img src='img/sailwende.png' class='screenshot'></p>"
   },
   {
     "title":       "Twimpact",
@@ -14,17 +14,17 @@
     "body":        "<p><a href='http://katepaulino.github.io/twimpact' target='blank'><img src='img/twimpact.png' class='screenshot'></p>"
   },
   {
+    "title":       "Cookie Stand",
+    "category":    "cookies",
+    "author":      "Katherine Paulino Lucas",
+    "authorUrl":   "https://github.com/katepaulino",
+    "body":        "<p><a href='http://katepaulino.github.io/cookie-stand' target='_blank'><img src='img/cookiestand.png' class='screenshot'></p>"
+  },
+  {
     "title":       "Market Analysis App",
     "category":    "marketing",
     "author":      "Katherine Paulino Lucas",
     "authorUrl":   "https://github.com/katepaulino",
     "body":        "<p><a href='http://katepaulino.github.io/market-analysis-app' target='_blank'><img src='img/maa.png' class='screenshot'></p>"
-  },
-  {
-    "title":       "Sail Wende",
-    "category":    "sailing",
-    "author":      "Katherine Paulino Lucas",
-    "authorUrl":   "https://github.com/katepaulino",
-    "body":        "<p><a href='http://sailwende.com' target='_blank'><img src='img/sailwende.png' class='screenshot'></p>"
   }
 ]
