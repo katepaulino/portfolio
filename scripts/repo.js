@@ -3,15 +3,13 @@
   repos.all = [];
 
   repos.requestRepos = function(view) {
-    $.ajax({
-      url: 'https://api.github.com/users/katepaulino/repos' +
-        '?per_page=5&sort=updated',
-      headers: {'Authorization': 'token ' + githubToken},
-      success: function (data) {
-        repos.all=data;
-        view(data);
-      }
-    });
+    $.get('github/users/katepaulino/repos' +
+            '?per_page=50' +
+            '&sort=updated')
+      .done(function(data, message, xhr) {
+        repos.all = data;
+      })
+      .done(view);
   };
 
   repos.with = function(attr) {
